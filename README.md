@@ -1,3 +1,3 @@
 # luketurner
 
-[Deploy link](luketurner.tk)
+http://luketurner.tk
