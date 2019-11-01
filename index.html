@@ -15,20 +15,50 @@
 <body>
 
     <nav>
-        <div>
-            <a class="navfont" href="index.html">Home</a>
-            <p></p>
-            <a class="navfont" href="illustration.html">Illustration </a>
+        <div id="navbar">
+
+            <div class="row justify-content-between">
+                <div class="col-3 offset-1">
+                    <a class="navfont nav-link active" href="index.html">HOME</a>
+                </div>
+                <div class="col-3">
+                    <div class="time">PT: <span id="dynamicTime"></span></div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-4 offset-1">
+                    <a class="navfont nav-link " href="illustration.html">ILLUSTRATION/</a>
+                    <a class="navfont nav-link " href="layout.html">LAYOUT</a>
+                </div>
+                <div class="col-3">
+                    <div class="time">CT: <span id="dynamicTimeCt"></span></div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-3 offset-1">
+                    <a class="navfont nav-link " href="motion.html">MOTION</a>
+                    <a class="navfont nav-link " href="about.html">/ABOUT</a>
+                </div>
+                <div class="col-3">
+                    <div class="time">ET: <span id="dynamicTimeEt"></span></div>
+                </div>
+            </div>
+
+
+            <!-- <a class="navfont" href="illustration.html">Illustration </a>
             <a class="navfont" href="layout.html">/ Layout</a>
-            <p></p>
+            <div class="time text-right">CT: <span id="dynamicTimeCt"></span></div>
+
             <a class="navfont" href="motion.html">Motion </a>
             <a class="navfont" href="about.html">/ About</a>
+            <div class="time text-right">ET: <span id="dynamicTimeEt"></span></div> -->
+
         </div>
 
         <div>
-            <div class="time text-right">PT: <span id="dynamicTime"></span></div>
-            <div class="time text-right">CT: <span id="dynamicTimeCt"></span></div>
-            <div class="time text-right">ET: <span id="dynamicTimeEt"></span></div>
+
 
         </div>
     </nav>
@@ -62,18 +92,28 @@
     <script>
 
         setInterval(function () {
-            $("#dynamicTime").text(moment().format("hh:mm:ss A") )
-        }, 1000)
-
-        
-        setInterval(function () {
-            $("#dynamicTimeCt").text(moment().add(2, 'hours').format('hh:mm:ss A') )
+            $("#dynamicTime").text(moment().format("hh:mm:ss A"))
         }, 1000)
 
 
         setInterval(function () {
-            $("#dynamicTimeEt").text(moment().add(3, 'hours').format('hh:mm:ss A') )
+            $("#dynamicTimeCt").text(moment().add(2, 'hours').format('hh:mm:ss A'))
         }, 1000)
+
+
+        setInterval(function () {
+            $("#dynamicTimeEt").text(moment().add(3, 'hours').format('hh:mm:ss A'))
+        }, 1000)
+
+        var header = document.getElementById("navbar");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
 
     </script>
 

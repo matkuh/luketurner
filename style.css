@@ -2,16 +2,33 @@
 
 .navfont {
     color: white;
-    font-family: 'avenir';
     font-size: 30px;
 }
 
 .time {
     color: white;
-    font-family: 'avenir';
+    /* font-family: 'avenir'; */
     font-size: 30px;
 }
 
 body {
     background-color: black;
+}
+
+.nav-link {
+    display: inline !important;
+    padding: 0;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: white;
+    text-decoration: line-through !important;
+    text-decoration-color: red !important;
+}
+
+.active, a:hover {
+    text-decoration: line-through !important;
+    text-decoration-color: red !important;
 }
