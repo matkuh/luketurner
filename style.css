@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=avenir);
+
+.navfont {
+    color: white;
+    font-family: 'avenir';
+    font-size: 30px;
+}
+
+.time {
+    color: white;
+    font-family: 'avenir';
+    font-size: 30px;
+}
+
+body {
+    background-color: black;
+}
