@@ -1,19 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=avenir);
 
+body {
+    background-color: black;
+    line-height: 1;
+}
+
+
 .navfont {
     color: white;
     font-size: 30px;
+    font-weight: 600;
 }
 
 .time {
     color: white;
-    /* font-family: 'avenir'; */
     font-size: 30px;
+    font-weight: 600;
 }
 
-body {
-    background-color: black;
-}
 
 .nav-link {
     display: inline !important;
@@ -31,4 +35,8 @@ a:hover {
 .active, a:hover {
     text-decoration: line-through !important;
     text-decoration-color: red !important;
+}
+
+#navbar {
+    margin-top: 20px;
 }
