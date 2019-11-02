@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=avenir);
 
 body {
+    position: relative;
     background-color: black;
     line-height: 1;
 }

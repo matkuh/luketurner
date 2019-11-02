@@ -12,14 +12,19 @@
     <title>Document</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#mainNav" data-offset="0">
 
-    <nav>
+    <div id="home"></div>
+
+    <nav class="fixed-top" id="mainNav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div id="navbar">
-
             <div class="row justify-content-between">
                 <div class="col-3 offset-1">
-                    <a class="navfont nav-link active" href="index.html">HOME</a>
+                    <a class="navfont nav-link js-scroll-trigger" href="#home">HOME</a>
                 </div>
                 <div class="col-3">
                     <div class="time">PT: <span id="dynamicTime"></span></div>
@@ -28,8 +33,8 @@
 
             <div class="row justify-content-between">
                 <div class="col-4 offset-1">
-                    <a class="navfont nav-link " href="illustration.html">ILLUSTRATION/</a>
-                    <a class="navfont nav-link " href="layout.html">LAYOUT</a>
+                    <a class="navfont nav-link js-scroll-trigger" href="#layout">LAYOUT/</a>
+                    <a class="navfont nav-link js-scroll-trigger" href="#illustration">ILLUSTRATION</a>
                 </div>
                 <div class="col-3">
                     <div class="time">CT: <span id="dynamicTimeCt"></span></div>
@@ -38,32 +43,19 @@
 
             <div class="row justify-content-between">
                 <div class="col-3 offset-1">
-                    <a class="navfont nav-link " href="motion.html">MOTION/</a>
-                    <a class="navfont nav-link " href="about.html">ABOUT</a>
+                    <a class="navfont nav-link js-scroll-trigger" href="#motion">MOTION/</a>
+                    <a class="navfont nav-link js-scroll-trigger" href="#about">ABOUT</a>
                 </div>
                 <div class="col-3">
                     <div class="time">ET: <span id="dynamicTimeEt"></span></div>
                 </div>
             </div>
 
-
-            <!-- <a class="navfont" href="illustration.html">Illustration </a>
-            <a class="navfont" href="layout.html">/ Layout</a>
-            <div class="time text-right">CT: <span id="dynamicTimeCt"></span></div>
-
-            <a class="navfont" href="motion.html">Motion </a>
-            <a class="navfont" href="about.html">/ About</a>
-            <div class="time text-right">ET: <span id="dynamicTimeEt"></span></div> -->
-
         </div>
 
-        <div>
-
-
-        </div>
     </nav>
 
-
+    <br><br><br><br>
     <div class="hero-wrap js-fullheight" style="background-color: black;">
 
         <p class="time text-right" id="dynamicTime"></p>
@@ -89,6 +81,53 @@
         </div>
     </div>
 
+    <section id="layout">
+        <div class="js-fullheight">
+                <br><br>
+            <h2 class="text-white text-center">
+                Layout
+            </h2>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        </div>
+    </section>
+
+    <section id="illustration">
+        <div class="js-fullheight">
+                <br><br>
+            <h2 class="text-white text-center">
+                Illustration
+            </h2>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        </div>
+    </section>
+
+    <section id="motion">
+        <div class="js-fullheight">
+                <br><br>
+            <h2 class="text-white text-center">
+                Motion
+            </h2>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        </div>
+    </section>
+
+    <section id="about">
+            <br><br>
+        <h2 class="text-white text-center">
+            About
+        </h2>
+        <br><br><br><br><br><br>
+        <video class="videoframe" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/webpage_about.mp4" type="video/mp4">
+        </video>
+    </section>
+
+
     <script>
 
         setInterval(function () {
@@ -105,15 +144,7 @@
             $("#dynamicTimeEt").text(moment().add(3, 'hours').format('hh:mm:ss A'))
         }, 1000)
 
-        var header = document.getElementById("navbar");
-        var btns = header.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
+
 
     </script>
 
