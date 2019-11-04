@@ -30,8 +30,11 @@
                 <div class="col-3 offset-1">
                     <a class="navfont nav-link js-scroll-trigger" href="#home">HOME</a>
                 </div>
-                <div class="col-3">
+                <div class="col-3 offset-4 text-right timecol">
                     <div class="time">PT: <span id="dynamicTime"></span></div>
+                </div>
+                <div class="time col-1">
+                    <span id="dynamicTimePt"></span>
                 </div>
             </div>
 
@@ -41,7 +44,7 @@
                     <a class="navfont nav-link js-scroll-trigger" href="#illustration">ILLUSTRATION</a>
                 </div>
                 <div class="col-3">
-                    <div class="time">CT: <span id="dynamicTimeCt"></span></div>
+                    <!-- <div class="time">CT: <span id="dynamicTimeCt"></span></div> -->
                 </div>
             </div>
 
@@ -51,7 +54,7 @@
                     <a class="navfont nav-link js-scroll-trigger" href="#about">ABOUT</a>
                 </div>
                 <div class="col-3">
-                    <div class="time">ET: <span id="dynamicTimeEt"></span></div>
+                    <!-- <div class="time">ET: <span id="dynamicTimeEt"></span></div> -->
                 </div>
             </div>
 
@@ -59,7 +62,7 @@
 
     </nav>
 
-    <br><br><br><br>
+    <br><br><br><br><br><br>
     <div class="hero-wrap js-fullheight" style="background-color: black;">
 
         <p class="time text-right" id="dynamicTime"></p>
@@ -144,18 +147,22 @@
     <script>
 
         setInterval(function () {
-            $("#dynamicTime").text(moment().format("hh:mm:ss A"))
+            $("#dynamicTime").text(moment().format("hh:mm:ss "))
         }, 1000)
-
 
         setInterval(function () {
-            $("#dynamicTimeCt").text(moment().add(2, 'hours').format('hh:mm:ss A'))
+            $("#dynamicTimePt").text(moment().format("A"))
         }, 1000)
 
 
-        setInterval(function () {
-            $("#dynamicTimeEt").text(moment().add(3, 'hours').format('hh:mm:ss A'))
-        }, 1000)
+        // setInterval(function () {
+        //     $("#dynamicTimeCt").text(moment().add(2, 'hours').format('hh:mm:ss A'))
+        // }, 1000)
+
+
+        // setInterval(function () {
+        //     $("#dynamicTimeEt").text(moment().add(3, 'hours').format('hh:mm:ss A'))
+        // }, 1000)
 
 
         $(document).ready(function(){
