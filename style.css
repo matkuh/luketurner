@@ -50,3 +50,13 @@ a:hover {
     /* height: 400px;
     width: 400px; */
 }
+
+.arrows {
+    height: 330px;
+    width: 330px;
+}
+
+.imgtext {
+    margin-right: 10%;
+    margin-left: 8%;
+}

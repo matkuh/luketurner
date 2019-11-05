@@ -94,8 +94,40 @@
             <!-- <h2 class="text-white text-center">
                 Layout
             </h2> -->
-            <img class="headers" src="assets/Layoutheader_webpage.png"/>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <img class="headers" src="assets/Layoutheader_webpage.png" />
+            <img class="arrows" src="assets/arrows_website.png" />
+            <div class="container text-white">
+                <img src="assets/imageplaceholder.png" />
+                <div class="imgtext">
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facere architecto aspernatur maxime
+                        ratione odio, sapiente, ipsa sit similique accusantium quos voluptates quis laudantium
+                        consectetur?
+                        Aliquam omnis dignissimos voluptatum ab.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo facere architecto aspernatur maxime
+                        ratione odio, sapiente, ipsa sit similique accusantium quos voluptates quis laudantium
+                        consectetur?
+                        Aliquam omnis dignissimos voluptatum ab.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illo facere architecto aspernatur maxime
+                        ratione odio, sapiente, ipsa sit similique accusantium quos voluptates quis laudantium
+                        consectetur?
+                        Aliquam omnis dignissimos voluptatum ab.</p>
+                </div>
+                <img src="assets/imageplaceholder.png" />
+                <div class="imgtext">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facere architecto aspernatur maxime
+                    ratione odio, sapiente, ipsa sit similique accusantium quos voluptates quis laudantium consectetur?
+                    Aliquam omnis dignissimos voluptatum ab.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo facere architecto aspernatur maxime
+                    ratione odio, sapiente, ipsa sit similique accusantium quos voluptates quis laudantium consectetur?
+                    Aliquam omnis dignissimos voluptatum ab.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo facere architecto aspernatur maxime
+                    ratione odio, sapiente, ipsa sit similique accusantium quos voluptates quis laudantium consectetur?
+                    Aliquam omnis dignissimos voluptatum ab.</p>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
         </div>
     </section>
@@ -106,7 +138,8 @@
             <!-- <h2 class="text-white text-center">
                 Illustration
             </h2> -->
-            <img class="headers" src="assets/illustrationheader_webpage.png"/>
+            <img class="headers" src="assets/illustrationheader_webpage.png" />
+            <img class="arrows" src="assets/arrows_website.png" />
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -119,7 +152,8 @@
             <!-- <h2 class="text-white text-center">
                 Motion
             </h2> -->
-            <img class="headers" src="assets/motionheader_webpage.png"/>
+            <img class="headers" src="assets/motionheader_webpage.png" />
+            <img class="arrows" src="assets/arrows_website.png" />
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -136,15 +170,16 @@
             <source src="assets/webpage_about.mp4" type="video/mp4">
         </video> -->
         <div class="js-fullheight">
-                <br><br>
-                <!-- <h2 class="text-white text-center">
+            <br><br>
+            <!-- <h2 class="text-white text-center">
                     About
                 </h2> -->
-                <img class="headers" src="assets/aboutheader_webpage.png"/>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
-    
-            </div>
+            <img class="headers" src="assets/aboutheader_webpage.png" />
+            <img class="arrows" src="assets/arrows_website.png" />
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        </div>
     </section>
 
 
@@ -169,21 +204,21 @@
         // }, 1000)
 
 
-        $(document).ready(function(){
-        $("body").scrollspy({ target: '#mainNav', offset: 100 });
-        $("#navbar a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault()
-                var hash = this.hash;
-                console.log(hash)
-                $("html, body").animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-                    window.location.hash = hash
-                })
-            }
+        $(document).ready(function () {
+            $("body").scrollspy({ target: '#mainNav', offset: 100 });
+            $("#navbar a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault()
+                    var hash = this.hash;
+                    console.log(hash)
+                    $("html, body").animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash
+                    })
+                }
+            })
         })
-    })
 
     </script>
 
