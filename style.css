@@ -28,13 +28,13 @@ body {
 
 /* mouse over link */
 
-a:hover {
+.navfont:hover {
     color: white;
     text-decoration: line-through !important;
     text-decoration-color: red !important;
 }
 
-.active, a:hover {
+.active, .navfont:hover {
     text-decoration: line-through !important;
     text-decoration-color: red !important;
 }
@@ -44,13 +44,14 @@ a:hover {
 }
 
 .arrows {
-    height: 330px;
-    width: 330px;
+    height: 150px;
+    width: 150px;
 }
 
 .imgtext {
     /* margin-right: 5%; */
     margin-left: 10%;
+    text-decoration: none !important;
 }
 
 .numbers {
@@ -58,5 +59,13 @@ a:hover {
     font-size: 100px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+}
+
+/* .layoutimgs {
+    height: 70%;
+} */
+
+h2 {
+    text-decoration: none !important;
 }
 
