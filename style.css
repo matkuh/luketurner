@@ -1,11 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=avenir);
-
 body {
     position: relative;
     background-color: black;
     line-height: 1;
 }
-
 
 .navfont {
     color: white;
@@ -22,7 +20,6 @@ body {
 .timecol {
     padding-right: 0;
 }
-
 
 .nav-link {
     display: inline !important;
@@ -46,17 +43,20 @@ a:hover {
     margin-top: 20px;
 }
 
-.headers {
-    /* height: 400px;
-    width: 400px; */
-}
-
 .arrows {
     height: 330px;
     width: 330px;
 }
 
 .imgtext {
-    margin-right: 10%;
-    margin-left: 8%;
+    /* margin-right: 5%; */
+    margin-left: 10%;
 }
+
+.numbers {
+    margin-top: 980px;
+    font-size: 100px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
