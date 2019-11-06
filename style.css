@@ -49,23 +49,29 @@ body {
 }
 
 .imgtext {
-    /* margin-right: 5%; */
-    margin-left: 10%;
+    margin-right: 20%;
+    margin-left: 5%;
     text-decoration: none !important;
 }
 
 .numbers {
-    margin-top: 980px;
+    margin-top: 500px;
     font-size: 100px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
 
-/* .layoutimgs {
-    height: 70%;
-} */
+.carousel img {
+    max-height: 600px;
+    /* margin: 0 auto; */
+}
 
 h2 {
-    text-decoration: none !important;
+    margin-left: 5%;
+}
+
+.carouselcont {
+    display: inline-block;
+    margin-left: 30%;
 }
 
