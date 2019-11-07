@@ -3,6 +3,7 @@ body {
     position: relative;
     background-color: black;
     line-height: 1;
+    overflow-x: hidden;
 }
 
 .navfont {
@@ -55,9 +56,8 @@ body {
 }
 
 .imgtext {
-    margin-right: 20%;
-    margin-left: 5%;
-    text-decoration: none !important;
+    color: white;
+
 }
 
 .numbers {
@@ -72,15 +72,16 @@ body {
     /* margin: 0 auto; */
 }
 
-h2 {
-    margin-left: 5%;
+.carousel-inner {
+    /* display: flex; */
 }
 
 .carouselcont {
-    display: inline-block;
-    margin: 0 auto;
-    margin-left: 27%;
+    display: flex;
+}
 
+.carouselcontainer {
+    display: flex;
 }
 
 .headers {
@@ -90,7 +91,13 @@ h2 {
 }
 
 .carousel-indicators {
-    bottom: -30px;
+    margin-left: 15%;
+    bottom: -50px;
+    padding-bottom: 10px;
+}
+
+.imgtextcont {
+    margin-top: 1%;
 }
 
 /* scrollbar */
