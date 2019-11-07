@@ -11,6 +11,9 @@ body {
     font-weight: 600;
 }
 
+.navheads {
+    margin-left: 1.5%;
+}
 
 .time {
     color: white;
@@ -80,7 +83,6 @@ h2 {
 
 .headers {
     margin-bottom: 15%;
-    margin-left: 7%;
     padding-top: 120px;
 }
 
