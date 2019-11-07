@@ -23,6 +23,7 @@ body {
 
 .timecol {
     padding-right: 0;
+
 }
 
 .nav-link {
@@ -48,8 +49,9 @@ body {
 }
 
 .arrows {
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
+    margin-bottom: -2%;
 }
 
 .imgtext {
@@ -77,13 +79,14 @@ h2 {
 .carouselcont {
     display: inline-block;
     margin: 0 auto;
-    margin-left: 26%;
+    margin-left: 27%;
 
 }
 
 .headers {
-    margin-bottom: 15%;
-    padding-top: 120px;
+    vertical-align: baseline;
+    /* margin-bottom: 7%; */
+    /* padding-top: 120px; */
 }
 
 .carousel-indicators {

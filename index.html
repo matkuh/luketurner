@@ -30,12 +30,12 @@
                 <div class="col-3 navheads">
                     <a class="navfont nav-link js-scroll-trigger" href="#home">HOME</a>
                 </div>
-                <div class="col-4 offset-3 text-right timecol">
+                <div class="col-4 offset-4 text-right timecol">
                     <div class="time">PT: <span id="dynamicTime"></span></div>
                 </div>
-                <div class="time col-1">
+                <!-- <div class="time col-1">
                     <span id="dynamicTimePt"></span>
-                </div>
+                </div> -->
             </div>
 
             <div class="row justify-content-between">
@@ -90,15 +90,17 @@
 
     <section id="layout">
         <div class="js-fullheight">
-            <br><br>
+            <br><br><br><br><br><br><br><br>
             <!-- <h2 class="text-white text-center">
                 Layout
             </h2> -->
+
             <img class="headers" src="assets/Layoutheader_webpage.png" />
             <video class="arrows" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="assets/Arrows_headers.mp4" type="video/mp4">
             </video>
 
+            <br><br>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -242,7 +244,7 @@
 
     <section id="illustration">
         <div class="js-fullheight">
-            <br><br>
+            <br><br><br><br><br><br><br><br>
             <!-- <h2 class="text-white text-center">
                 Illustration
             </h2> -->
@@ -256,7 +258,7 @@
 
     <section id="motion">
         <div class="js-fullheight">
-            <br><br>
+            <br><br><br><br><br><br><br><br>
             <!-- <h2 class="text-white text-center">
                 Motion
             </h2> -->
@@ -278,7 +280,7 @@
             <source src="assets/webpage_about.mp4" type="video/mp4">
         </video> -->
         <div class="js-fullheight">
-            <br><br>
+            <br><br><br><br><br><br><br><br>
             <!-- <h2 class="text-white text-center">
                     About
                 </h2> -->
@@ -297,7 +299,7 @@
 
 
         setInterval(function () {
-            $("#dynamicTime").text(moment().format("hh:mm:ss "))
+            $("#dynamicTime").text(moment().format("hh:mm:ss A"))
         }, 1000)
 
         setInterval(function () {
