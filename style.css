@@ -20,6 +20,7 @@ body {
     color: white;
     font-size: 30px;
     font-weight: 600;
+    margin-right: -80px;
 }
 
 .timecol {
@@ -46,7 +47,7 @@ body {
 }
 
 #navbar {
-    margin-top: 20px;
+    margin-top: -20px;
 }
 
 .arrows {
