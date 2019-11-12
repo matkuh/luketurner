@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 
     <script src="js/scrollorama.js"></script>
     <script src="js/lettering.js"></script>
@@ -186,7 +186,7 @@
                 </div>
             </div>
 
-            <div id="modal1" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+            <div id="modal1" class="modal hide fade bd-example-modal-sm" tabindex="-1" role="dialog"
                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-sm">
                     <div class="modal-content">
@@ -437,10 +437,12 @@
             $("#dynamicTimePt").text(moment().format("A"))
         }, 1000)
 
+        // $('#modal1').modal()
+
+
         $(document).ready(function () {
-            $('.carousel').carousel()
-            $('#carousel1').carousel()
-            $(".modal").modal()
+            $('.carousel').carousel('pause')
+            $('#carousel1').carousel('pause')
             $("body").scrollspy({ target: '#mainNav', offset: 100 });
             $("#navbar a").on('click', function (event) {
                 if (this.hash !== "") {
@@ -454,6 +456,8 @@
                     })
                 }
             })
+
+
 
             // initialize the plugin, pass in the class selector for the sections of content (blocks)
             var scrollorama = $.scrollorama({ blocks: '.scrollblock' });
