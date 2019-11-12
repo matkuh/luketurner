@@ -60,6 +60,11 @@ body {
 
 }
 
+.layoutimgs {
+    height: 600px;
+    width: 600px;
+}
+
 .numbers {
     margin-bottom: -620px;
     margin-left: 40px;
@@ -110,7 +115,7 @@ body {
     color: white;
     font-family: 'MicroExtendFLF';
     font-weight: 900;
-    text-shadow: 0px 2px, 2px 0px, 3px 2px
+    /* text-shadow: 0px 2px, 2px 0px, 3px 2px */
 
 }
 
