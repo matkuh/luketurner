@@ -65,6 +65,17 @@ body {
     width: 600px;
 }
 
+.layoutimgs1 {
+    height: 600px;
+    width: 750px;
+}
+
+.imgmodal {
+    width: 800px;
+    height: 800px;
+    margin-left: -250px;
+}
+
 .numbers {
     margin-bottom: -610px;
     margin-left: 40px;
@@ -73,6 +84,16 @@ body {
     text-orientation: mixed;
     color: white;
 }
+
+.numbers2 {
+    margin-bottom: -610px;
+    margin-left: 130px;
+    font-size: 100px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+}
+
 
 .numbercont {
     margin-right: -100px;
