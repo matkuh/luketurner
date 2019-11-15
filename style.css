@@ -170,6 +170,12 @@ body {
 }
 
 
+.motionvids {
+    height: 700px;
+    width: 700px;
+}
+
+
 /* scrollbar */
 
 ::-webkit-scrollbar {
