@@ -112,6 +112,10 @@ body {
     vertical-align: baseline;
 }
 
+.headers1 {
+    vertical-align: baseline;
+}
+
 .carousel-indicators {
     margin-left: 15%;
     bottom: -50px;
@@ -179,7 +183,7 @@ body {
     margin-left: -250px;
 }
 
-/* scrollbar */
+
 
 @media screen and (max-width: 500px) {
     #mainNav {}
@@ -195,8 +199,9 @@ body {
     }
     .videoframe {
         margin-top: 25%;
-        height: 95%;
-        width: 95%;
+        height: 99%;
+        width: 99%;
+        padding-bottom: 120px;
     }
     .time {
         font-size: 1px;
@@ -204,6 +209,7 @@ body {
     .aboutvid {
         height: 200px;
         width: 200px;
+        padding-right: 30px;
     }
     .aboutfont {
         font-size: 20px;
@@ -218,10 +224,12 @@ body {
     .headers {
         height: 90%;
         width: 60%;
+        padding-top: 70px;
     }
     .headers1 {
         height: 99%;
         width: 80%;
+        padding-top: 70px;
     }
     .layoutimgs {
         height: 95%;
@@ -264,15 +272,19 @@ body {
         bottom: -40px;
         padding-bottom: 10px;
     }
+    .modal {
+        margin-bottom: -50%;
+        
+    }
     .imgmodal {
-        height: 300px;
-        width: 300px;
-        margin-left: 80px;
+        height: 95%;
+        width: 99%;
+        margin-left: 0.3%;
     }
     .imgmodal3 {
-        height: 300px;
-        width: 300px;
-        margin-left: 65px;
+        height: 95%;
+        width: 99%;
+        margin-left: 0.3%;
     }
 }
 
