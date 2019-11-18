@@ -24,7 +24,6 @@ body {
 
 .timecol {
     padding-right: 0;
-
 }
 
 .nav-link {
@@ -54,17 +53,20 @@ body {
     width: 140px;
     margin-bottom: -2%;
 }
+.arrows1 {
+    height: 140px;
+    width: 140px;
+    margin-bottom: -2%;
+}
 
 .imgtext {
     color: white;
-
 }
 
 .layoutimgs {
     height: 600px;
     width: 600px;
 }
-
 
 .imgmodal {
     width: 800px;
@@ -90,7 +92,6 @@ body {
     color: white;
 }
 
-
 .numbercont {
     margin-right: -100px;
 }
@@ -98,7 +99,6 @@ body {
 .carousel img {
     max-height: 600px;
 }
-
 
 .carouselcont {
     display: flex;
@@ -133,7 +133,6 @@ body {
     font-family: 'MicroExtendFLF';
     font-weight: 900;
     /* text-shadow: 0px 2px, 2px 0px, 3px 2px */
-
 }
 
 .aboutfontside {
@@ -159,42 +158,133 @@ body {
     color: red;
 }
 
-
 #fly-in {
     color: white;
-	font-size: 20px;
-	margin-left: 1%;
-}
-.flyin {
-	margin-top: 300px;
+    font-size: 20px;
+    margin-left: 1%;
 }
 
+.flyin {
+    margin-top: 300px;
+}
 
 .motionvids {
     height: 700px;
     width: 700px;
 }
 
+.imgmodal3 {
+    width: 800px;
+    height: 600px;
+    margin-left: -250px;
+}
 
 /* scrollbar */
 
+@media screen and (max-width: 500px) {
+    #mainNav {}
+    .arrows {
+        height: 50px;
+        width: 50px;
+        margin-bottom: -2.5%;
+    }
+    .arrows1 {
+        height: 50px;
+        width: 50px;
+        margin-bottom: -4.5%;
+    }
+    .videoframe {
+        margin-top: 25%;
+        height: 95%;
+        width: 95%;
+    }
+    .time {
+        font-size: 1px;
+    }
+    .aboutvid {
+        height: 200px;
+        width: 200px;
+    }
+    .aboutfont {
+        font-size: 20px;
+    }
+    .aboutfontside {
+        font-size: 8px;
+        margin-top: 10px;
+    }
+    .aboutcont {
+        margin-top: -300px;
+    }
+    .headers {
+        height: 90%;
+        width: 60%;
+    }
+    .headers1 {
+        height: 99%;
+        width: 80%;
+    }
+    .layoutimgs {
+        height: 95%;
+        width: 95%;
+        margin-left: 8%;
+    }
+    .layoutimgs1 {
+        height: 95%;
+        width: 95%;
+        margin-left: 8%;
+    }
+    .illustrationimgs {
+        height: 95%;
+        width: 95%;
+        margin-left: 8%;
+    }
+    .carousel {
+        height: 50%;
+        width: 70%;
+    }
+    .numbers {
+        font-size: 1px;
+        color: black;
+    }
+    .numbers2 {
+        font-size: 1px;
+        color: black;
+    }
+    .motionvids {
+        height: 95%;
+        width: 95%;
+        margin-left: 8%;
+    }
+    .text-center {
+        font-size: 60%;
+    }
+    .carousel-indicators {
+        margin-left: 15%;
+        bottom: -40px;
+        padding-bottom: 10px;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: red; 
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: red;
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
-  }
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
