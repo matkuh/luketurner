@@ -264,6 +264,16 @@ body {
         bottom: -40px;
         padding-bottom: 10px;
     }
+    .imgmodal {
+        height: 300px;
+        width: 300px;
+        margin-left: 80px;
+    }
+    .imgmodal3 {
+        height: 300px;
+        width: 300px;
+        margin-left: 80px;
+    }
 }
 
 ::-webkit-scrollbar {
