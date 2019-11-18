@@ -240,7 +240,7 @@ body {
     }
     .carousel {
         height: 50%;
-        width: 70%;
+        width: 95%;
     }
     .numbers {
         font-size: 1px;
@@ -257,6 +257,7 @@ body {
     }
     .text-center {
         font-size: 60%;
+        width: 450px;
     }
     .carousel-indicators {
         margin-left: 15%;
