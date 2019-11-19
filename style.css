@@ -49,18 +49,35 @@ body {
 }
 
 .arrows {
-    height: 140px;
-    width: 140px;
-    margin-bottom: -2%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: -1.5%;
 }
 .arrows1 {
-    height: 140px;
-    width: 140px;
-    margin-bottom: -2%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: -1.5%;
 }
 
 .imgtext {
     color: white;
+    /* font-family: ''; */
+    /* letter-spacing: 0px; */
+    /* font-weight: 100; */
+    /* line-height: normal; */
+
+}
+
+.programs {
+    /* font-family: ''; */
+    /* letter-spacing: 0px; */
+    /* font-weight: 100; */
+}
+
+.textTitle {
+    /* font-family: ''; */
+    /* letter-spacing: 0px; */
+    /* font-weight: 100; */
 }
 
 .layoutimgs {
@@ -110,10 +127,12 @@ body {
 
 .headers {
     vertical-align: baseline;
+    width: 400px;
 }
 
 .headers1 {
     vertical-align: baseline;
+    width: 700px;
 }
 
 .carousel-indicators {
@@ -192,6 +211,8 @@ body {
     height: 95%;
     width: 55%;
 }
+
+
 
 
 
