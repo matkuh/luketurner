@@ -178,9 +178,19 @@ body {
 }
 
 .imgmodal3 {
-    width: 800px;
-    height: 600px;
-    margin-left: -250px;
+    width: 1000px;
+    height: 800px;
+    margin-left: -350px;
+}
+
+.illustrationimg {
+    height: 90%;
+    width: 50%;
+}
+
+.illustrationimg:hover {
+    height: 95%;
+    width: 55%;
 }
 
 
