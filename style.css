@@ -17,9 +17,9 @@ body {
 
 .time {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
-    margin-right: -80px;
+    margin-right: -50px;
 }
 
 .timecol {
@@ -29,6 +29,10 @@ body {
 .nav-link {
     display: inline !important;
     padding: 0;
+}
+
+.contact {
+    font-size: 30px;
 }
 
 /* mouse over link */
@@ -169,7 +173,7 @@ body {
 .aboutcont {
     position: relative;
     z-index: 9999;
-    margin-top: -95px;
+    margin-top: -55px;
 }
 
 .aboutvidcont {
@@ -213,11 +217,56 @@ body {
 }
 
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .numbers {
+        margin-bottom: -610px;
+        margin-left: -70px;
+        font-size: 100px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        color: white;
+    }
+    
+    .numbers2 {
+        margin-bottom: -610px;
+        margin-left: -50px;
+        font-size: 100px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        color: white;
+    }
+
+
+}
 
 
 
 @media screen and (max-width: 500px) {
-    #mainNav {}
     .arrows {
         height: 50px;
         width: 50px;
@@ -319,26 +368,7 @@ body {
     }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-/* Track */
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
 
-/* Handle */
 
-::-webkit-scrollbar-thumb {
-    background: red;
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
-}
